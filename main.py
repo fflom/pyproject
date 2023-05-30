@@ -42,7 +42,6 @@ async def but2(callback : types.CallbackQuery):
     await callback.message.answer('Вітаємо на другому курсі ! Твій статус другокурсник ! \n'
                                 'Баланс 20 монет. \n'
                                 'Обери завдання , щоб перейти на наступний рівень ', reply_markup=urlbut2)
-    # await callback.answer()
 
 @dp.callback_query_handler(text='button2')
 async def but3(callback : types.CallbackQuery):
@@ -55,7 +54,6 @@ async def but3(callback : types.CallbackQuery):
     await callback.message.answer('Вітаємо на третьому курсі ! Твій статус третьокурсник!\n'
                                 'Баланс 35 монет. \n'
                                 'Обери завдання , щоб перейти на наступний рівень', reply_markup=urlbut3)
-    # await callback.answer()
 
 @dp.callback_query_handler(text='button3')
 async def but4(callback : types.CallbackQuery):
@@ -68,13 +66,11 @@ async def but4(callback : types.CallbackQuery):
     await callback.message.answer('Вітаємо на четвертому курсі ! Твій статус випускник ! \n'
                                 'Баланс 50 монет.  \n'
                                 'Обери завдання щоб завершити: ', reply_markup=urlbut4)
-    # await callback.answer()
 
 @dp.callback_query_handler(text='button4')
 async def but5(callback : types.CallbackQuery):
     await bot.send_photo(chat_id=callback.message.chat.id, photo=photo_end)
     await callback.message.answer('Забирай свій диплом!')
-    # await callback.answer()
 
 
 if __name__ == '__main__':
