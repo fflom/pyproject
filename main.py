@@ -12,7 +12,6 @@ photo3 = open("level3.jpg", 'rb')
 photo4 = open("level4.jpg", 'rb')
 photo_end = open("end.jpg", 'rb')
 
-
 urlbut = InlineKeyboardMarkup(row_width=1)
 button_1 = InlineKeyboardButton('відпочити на канікулах (15 монет)', callback_data='button1')
 button_2 = InlineKeyboardButton('захистити ознайомчу практику (15 монет)', callback_data='button1')
