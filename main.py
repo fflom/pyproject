@@ -3,7 +3,7 @@ from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = Bot(token='5710647323:AAGaWqwHb3aXs3n9LtvgSS-Qe4ylSVyy85s')
+bot = Bot(token='Token')
 dp = Dispatcher(bot)
 
 photo1 = open("level1.jpg", 'rb')
